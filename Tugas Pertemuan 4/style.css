@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+ }
+
+ body {
+    padding: 15px;
+    background-color:rgb(51, 47, 47)
+}
+
+ .container{
+    max-width: 1200px;
+    margin: auto;
+ }
+
+ h1{
+    color: green;
+    
+ }
+
+ span{
+    color: white;
+ }
+
+ h3{
+    color: white;
+ }
+
+ .txt-1{
+    color: green;
+ }
+
+ .test h1{
+    text-align: center;
+    font-size: 100px;
+    margin: 0 auto; 
+}
+
+ .txt-3 {
+    text-align: center; 
+    display: block; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: green;
+}
+
+ h2{
+    color: white;
+ }
+
+ a{
+    text-decoration: none;
+    color: #44b560;
+ }
+
+ a:hover{
+    color: rgb(1, 62, 15);
+ }
+
+ p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    color: white;
+ }
+
+ .row{
+    margin: 0px -18px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+ }
+
+ .row > .column{
+    padding: 7px;
+ }
+
+ .column{
+    float: left;
+    width: 25%;
+    flex: 1;
+    padding: 7px;
+    box-sizing: border-box;
+ }
+
+ .row:after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ .content{
+    background-color: rgb(86, 84, 84);
+    padding: 10px;
+    border: 1px solid white;
+ }
+
+ @media screen and (max-width:850px) {
+    .column{
+        width: 50%;
+    }
+    
+ }
+
+ @media screen and (max-width:400px) {
+    .column{
+        width: 100%;
+    }
+ }
