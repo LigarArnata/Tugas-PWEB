@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()" style="max-width: 400px; margin: 0 auto; margin-top: 20px;">
+            <div class="form-group">
+                <label style="font-weight: bold;">Nama</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control">
+            </div>
+            <div class="form-group">
+                <label style="font-weight: bold;">Email</label>
+                <input type="email" name="email" placeholder="Email Aktif" class="form-control">
+                <small id="emailHelp" class="form-text text-muted">Email Akan Digunakan Untuk Mengirimkan Notifikasi.</small>
+            </div>
+            <div class="form-group">
+                <label style="font-weight: bold;">NRP</label>
+                <input type="text" name="NRP" placeholder="NRP" class="form-control">
+            </div>
+            <div class="form-group">
+                <label style="font-weight: bold;">Mata Kuliah</label>
+                <select name="matkul" class="form-control">
+                    <option value="0">Pilih Mata Kuliah</option>
+                    <option value="1">Pemrograman Web</option>
+                    <option value="2">Jaringan Komputer</option>
+                    <option value="3">Grafika Komputer</option>
+                    <option value="4">Pemodelan dan Simulasi</option>
+                    <option value="5">Teori Graf</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label style="font-weight: bold;">Dosen</label>
+                <select name="dosen" class="form-control">
+                    <option value="0">Pilih Dosen</option>
+                    <option value="1">Fajar Baskoro, S.Kom., MT.</option>
+                    <option value="2">Dr. Dwi Sunaryono, S.Kom., M.Kom.</option>
+                    <option value="3">Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.</option>
+                    <option value="4">Dr. Anny Yuniarti, S.Kom., M.Comp.Sc.</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            if (document.forms["formPendaftaran"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["email"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["NRP"].value == "") {
+                alert("NRP Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["NRP"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["matkul"].selectedIndex < 1) {
+                alert("Pilih Mata Kuliah");
+                document.forms["formPendaftaran"]["matkul"].focus();
+                return false;
+            }
+            if (document.forms["formPendaftaran"]["dosen"].selectedIndex < 1) {
+                alert("Pilih Dosen");
+                document.forms["formPendaftaran"]["dosen"].focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
