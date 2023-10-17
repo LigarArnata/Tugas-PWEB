@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+.nav-link {
+  font-size: medium;
+}
+
+.navbar-brand {
+  font-size: medium;
+}
+
+html{
+    font-size: 80.5%;
+    overflow-x: hidden;
+    margin-top: 0px;
+}
+
+body{
+    background:#3A5A40;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.landingPage{
+  margin-top: -50px;
+  background: rgb(235, 253, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.landingPage .image img{
+  width:40vw;
+  
+}
+
+.landingPage .content h3{
+  font-size: 4rem;
+  color:#ffffff;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.landingPage .content h3 span{
+    font-size: 5.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.landingPage .content p{
+  font-size: 1em;
+  color:#666;
+  padding:1rem 0;
+}
+
+.landingPage{
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:url(./img/Cover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card2{
+    align-items: center;
+    border: 20px;
+    background-color: #ffffff;
+    margin: auto; 
+}
+      
+.card{
+
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.detaile{
+  margin-left: auto;
+}
+
+.btn{
+  text-align: center;
+  border-radius: 50px;
+  justify-content: center;
+}
